@@ -1,0 +1,34 @@
+<table class="table mb-5 mt-3">
+    <th>Nome</th>
+    <th>Nome do Usuario</th>
+    <th>Email</th>
+    <th>Telefone</th>
+    <th>Website</th>
+    <th>Rua</th>
+    <th>Complemento</th>
+    <th>Cidade</th>
+    <th>CEP</th>
+    <th>Lat</th>
+    <th>Lng</th>
+    <th>Company</th>
+    <th>CatchPhrase</th>
+    <th>Bs</th>
+
+    <tr *ngFor="let item of user">
+        <td>{{item.name}}</td>
+        <td>{{item.username}}</td>
+        <td>{{item.email}}</td>
+        <td>{{item.phone}}</td>
+        <td>{{item.website}}</td>
+        <td>{{item.address.street}}</td>
+        <td>{{item.address.suite}}</td>
+        <td>{{item.address.city}}</td>
+        <td>{{item.address.zipcode}}</td>
+        <td>{{item.address.geo.lat}}</td>
+        <td>{{item.address.geo.lng}}</td>
+        <td>{{item.company.name}}</td>
+        <td>{{item.company.catchPhrase}}</td>
+        <td>{{item.company.bs}}</td>
+    </tr>
+
+</table>
