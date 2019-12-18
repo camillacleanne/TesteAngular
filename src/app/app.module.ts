@@ -10,6 +10,8 @@ import { MenuComponent } from './menu/menu.component';
 import { ListaComponent } from './lista/lista.component';
 import { HomeComponent } from './home/home.component';
 import { HttpClientModule } from '@angular/common/http';
+import { BuscarComponent } from './buscar/buscar.component';
+import { FormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -19,12 +21,14 @@ import { HttpClientModule } from '@angular/common/http';
     RodapeComponent,
     MenuComponent,
     ListaComponent,
-    HomeComponent
+    HomeComponent,
+    BuscarComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    HttpClientModule
+    HttpClientModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent] 

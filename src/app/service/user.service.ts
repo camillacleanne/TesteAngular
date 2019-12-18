@@ -10,7 +10,11 @@ export class UserService {
   constructor(private http: HttpClient ) { }
 
   getAll(){
-    return this.http.get ("jsonplaceholder.typicode.com/users")
+    return this.http.get("http://jsonplaceholder.typicode.com/users")
+  }
+
+  getId(id:number){
+    return this.http.get("http://jsonplaceholder.typicode.com/users/"+id)
   }
 
 }
